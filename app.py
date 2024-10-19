@@ -11,7 +11,7 @@ from langchain_openai import ChatOpenAI
 def initialize_openai_model(api_key):
     """Initialize the OpenAI model with the API key."""
     os.environ["OPENAI_API_KEY"] = api_key  # Set the API key dynamically
-    return ChatOpenAI(temperature=0.5, model_name="gpt-4o-mini-0125")
+    return ChatOpenAI(temperature=0.5, model_name="gpt-4o-mini")
 
 # --------------------------------------------
 # --------- Define Prompt Template -----------
